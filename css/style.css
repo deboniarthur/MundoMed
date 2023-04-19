@@ -1,0 +1,477 @@
+/* Alunos: Arthur Guilherme do Nascimento Deboni e Victor de Oliveira Leiroz */
+/* Matrícula Arthur:1230105304 */
+/* Matrícula Victor:1230114264 */
+/* Turma A (Segunda e Quinta) */
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* estilo geral */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+  max-height: 100px;
+}
+
+/* estilo do cabeçalho */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #51d158;
+  padding: 10px 30px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.nav-bar li {
+  margin-right: 50px;
+}
+
+.nav-bar li a.active {
+  color: black;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.8s;
+  color: #ffffff;
+}
+
+.nav-bar a:hover {
+  color: black;
+  font-size: 1.1vw;
+}
+
+/* estilo do conteúdo */
+.index-geral {
+  padding: 50px;
+  text-align: justify;
+  animation: up-text 1.6s forwards;
+}
+
+.wave1 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 12%;
+}
+
+.wave2 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 101%;
+}
+
+.index-geral h2 {
+  color: #186908;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.index-geral h4 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.index-geral .doctors {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* estilo do rodapé */
+footer {
+  text-align: center;
+  background-color: #c7c7c7;
+  padding: 10px;
+  animation: up-text 1.6s forwards;
+}
+
+@keyframes up-text {
+  0% {
+    opacity: 0;
+    transform: translateY(20vw);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Estilos para a página de Marque sua Consulta */
+
+.consulta-geral {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+  animation: up-text 1.6s forwards;
+  scale: 1;
+}
+
+.consulta-geral h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  color: #186908;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  display: block;
+  color: black;
+}
+
+input[type="text"],
+select,
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+  width: 45%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: #1d8f00;
+  margin-right: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #186908;
+  text-decoration: underline;
+}
+
+.wave3 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 12%;
+}
+
+.wave4 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 81%;
+}
+
+.calendar-animation {
+  position: absolute;
+  bottom: 23vh;
+  left: 45vw;
+}
+
+/* Página de Atendimento */
+
+.atendimento-geral {
+  background-color: #ffffff;
+  padding: 60px;
+  text-align: start;
+  font-size: 24px;
+  color: #666666;
+  font-size: 24px;
+  animation: up-text 1.6s forwards;
+}
+
+.atendimento-geral h2 {
+  font-size: 36px;
+  color: #186908;
+  margin-bottom: 40px;
+}
+
+.atendimento-geral h4 {
+  font-size: 24px;
+  color: #666666;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.local-map {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.avisos {
+  font-size: 18px;
+  color: #666666;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.wave9 {
+  text-align: start;
+  position: absolute;
+  top: 12%;
+  z-index: 999;
+}
+
+.wave10 {
+  text-align: start;
+  position: absolute;
+  z-index: -999;
+  top: 48%;
+}
+
+/* Página de Novidades */
+
+.novidades-geral {
+  padding: 50px;
+  padding-top: 60px;
+  text-align: justify;
+  animation: up-text 1.6s forwards;
+}
+
+.novidades-geral h2 {
+  font-size: 36px;
+  color: #186908;
+  margin-bottom: 40px;
+}
+
+.novidades-geral h4 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.news {
+  position: relative;
+  bottom: 53vh;
+  left: 63vw;
+}
+
+.wave7 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 12%;
+}
+
+.agradecimento {
+  text-align: end;
+  position: absolute;
+  top: 111%;
+  left: 23%;
+}
+
+.wave8 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 114%;
+}
+
+/* Página de Contate */
+
+.contate-geral {
+  padding: 50px;
+  text-align: justify;
+  animation: up-text 1.6s forwards;
+}
+
+.contate-geral h2 {
+  font-size: 36px;
+  color: #186908;
+  margin-bottom: 40px;
+}
+
+.contate-geral h4 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.wave5 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 12%;
+}
+
+#social {
+  text-decoration: none;
+  color: #186908;
+}
+
+#social:hover {
+  text-decoration: underline;
+}
+
+.contact-animate {
+  position: absolute;
+  top: 16%;
+  left: 58vw;
+}
+
+.wave6 {
+  text-align: start;
+  position: absolute;
+  z-index: -10;
+  top: 64%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ajustes no cabeçalho */
+
+  .nav-logo {
+    margin-bottom: 20px;
+  }
+
+  #logo-mundomed {
+    width: 50%;
+    margin-left: 100px;
+    position: absolute;
+  }
+
+  .nav-bar {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav-bar a {
+    font-weight: normal;
+    font-size: 13px;
+    color: #ffffff;
+  }
+
+  .nav-bar a:hover {
+    color: black;
+    font-size: 3.5vw;
+  }
+
+  .doctors {
+    scale: 2.5;
+    padding-bottom: 15px;
+  }
+
+  .wave1 {
+    top: 17%;
+  }
+
+  .wave2 {
+    top: 255%;
+  }
+
+  .wave3 {
+    top: 17%;
+  }
+
+  .wave4 {
+    top: 131%;
+  }
+
+  .calendar-animation {
+    scale: 0.5;
+  }
+
+  .local-map {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .contact-animate {
+    position: absolute;
+    top: 62%;
+    left: 38vw;
+  }
+
+  .wave5 {
+    text-align: start;
+    position: absolute;
+    z-index: -10;
+    top: 17.5%;
+  }
+
+  .wave6 {
+    text-align: start;
+    position: absolute;
+    z-index: -10;
+    top: 128%;
+  }
+
+  .news {
+    scale: 2.2;
+    margin-top: 170%;
+  }
+
+  .wave7 {
+    top: 17%;
+  }
+
+  .agradecimento {
+    top: 170%;
+    right: 35%;
+  }
+
+  .agradecimento img {
+    width: 100%;
+  }
+
+  .wave8 {
+    top: 192%;
+  }
+
+  .wave9 {
+    top: 17.5%;
+  }
+
+  .wave10 {
+    top: 229%;
+  }
+}
